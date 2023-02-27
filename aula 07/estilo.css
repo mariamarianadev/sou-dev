@@ -1,0 +1,22 @@
+body {
+display: flex;
+justify-content: space-around;
+}
+
+div.lado-esquerdo > img {
+    width: 60%;
+}
+
+.lado-direito,.lado-esquerdo {
+
+ width: 50%;
+
+}
+
+.lado-direito > .formulario {
+    background-color: #595b5a;
+    
+    border-radius: 5px;
+    padding: 20px;
+    
+}

@@ -1,0 +1,17 @@
+1- primeiro abre o navegador, coloca no site do facebook.
+
+2- Coloca seu email no campo de email e passa para o proximo passo
+
+3- coloca sua senha logo abaixo do email e passa para o proximo passo
+
+4-  ao digitar email e senha apertar o botão entrar
+
+5-caso senha e email estejam corretos, o sistema valida e permite que o usuario entre em sua conta. 
+
+-------------------------------------------------------
+
+1- caso o usuario não coloque seu email corretor, deixar o input em vermelho para sinalizar ao usuario que falta esse passo a passo.
+
+2- usuario colocando seu email, e caso for o email correto e colocando a senha pode entrar na sua conta 
+
+3- caso senha esteja incorreta, recarregar pagina com email e deixar input de senha vermelha informando que senha está incorreta. 

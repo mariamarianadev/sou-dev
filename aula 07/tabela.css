@@ -1,0 +1,44 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+.tabela{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(146, 144, 144, 0.568);
+    
+}
+.tabela table{
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 5px;
+
+}
+
+.tabela table thead {
+    background-color: blueviolet;
+    color: pink;
+}
+.tabela table thead th {
+    height: 40px;
+}
+.tabela table tbody td{
+    padding: 0 16px;
+    line-height: 40px;
+    outline: 1px solid #948787;
+    outline-offset: -1px;
+
+}
+.tabela table tbody tr:nth-child(2) {
+    background-color: violet
+
+}
+
+.tabela table thead th:nth-child(2) {
+    background-color: #948787;
+}

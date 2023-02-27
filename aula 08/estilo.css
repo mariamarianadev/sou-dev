@@ -1,0 +1,81 @@
+body {
+    background-color: darkgray;
+}
+
+.secao-detalhes {
+display: flex ;
+justify-content: space-around;
+text-align: center;
+margin-top: 40px;
+}
+
+.secao-detalhes  article {
+background-color: aliceblue;
+width: 200px;
+height: 200px;
+border-radius: 100%; 
+margin-bottom: 30px;
+display: flex; /* só vai funcionar tags abaixo se tiver essa tag */
+align-items: center; /*alinhamento vertical*/
+justify-content: center; /*alinhamento horizontal*/
+transition: 1s;
+box-shadow: 10px 10px 10px 10px #666;
+}
+.secao-detalhes article:hover {
+    color: red;
+    transition: 1s;
+    transform: scale(1.2) rotate(-60deg)
+}
+
+.secao-detalhes i {
+    font-size: 4rem;
+}
+
+#sabores  {
+    width: 300px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 150px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px #d6d6f0;
+    padding: 16px;
+}
+
+#sabores label {
+    display: flex;
+}
+
+#sabores input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+#sabores input[type="checkbox"]::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(183, 11, 183) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    background-color: white;
+    transition: all 200ms;
+}
+#sabores input[type="checkbox"]:checked::after{
+    background-color: rgb(183, 11, 183);
+}
+
+#sabores input[type="checkbox"]::before{
+    content: "";
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    top: calc(50% - 3px) ;
+    left: calc(50% - 5px);
+    transform:  rotate(-45deg);
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    z-index: 1;
+}
