@@ -1,0 +1,84 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}  /* o * é um seletor que vale pra todo mundo*/
+
+body {
+   /* height: 100vh;*/
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;   /*forma de centralizar*/
+}
+form {
+    width: 360px; /* width é largura e sempre vem no automatico, trocar caso necessario*/
+    background-color: white;
+   /* margin-top: 100px ; 
+    margin-left: 50px; -- pra cima e pro lado */
+    margin: 0 auto; /*centraliza */
+    margin-top: 100px;
+    padding: 16px; /* empurra para dentro*/
+    
+}
+label{
+    display: block;
+margin-bottom: 6px; /* margem pra baixo*/
+} 
+/*quando colocado virgula e o nome da tag todas listadas recebem a mesma configuracao*/ input, select { 
+   width: 100%;
+   height: 46px; /*height siginfica altura*/
+   margin-bottom: 16px;
+   padding: 0 10px;
+} 
+
+input:hover{
+  border-color:  blueviolet;
+}
+input:focus, select:focus, textarea:focus {
+   outline-color:  blue;
+}
+textarea{
+    width: 100%;
+}
+select{
+    /* width: 100%;
+    height: 46px;
+    margin-bottom: 16px;
+    padding:0 10px; */ 
+    
+    font-weight: bold;
+}
+button {
+    width: 50%;
+    height: 46px;
+    
+    padding: 0 26px;
+    background-color: rgba(32, 80, 252, 0.801); 
+    color: white; 
+    font-size: 16px;
+    border: none; /*tirar borda*/
+    border-radius: 5px; /* aredondar bordar*/
+    transition-duration: 300ms;
+    
+}
+.botoes {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+}
+.botao-grande {
+    width: 100%;
+}
+form h5 {
+    font-size: 18px; 
+    margin-top: 16px;
+}
+
+table{
+    width: 80%;
+    background-color: white;
+    padding: 16px;
+    border-radius: 5px;
+    border-collapse: collapse;
+
+}
