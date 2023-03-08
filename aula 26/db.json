@@ -1,0 +1,80 @@
+{
+  "categoria": [
+    {
+      "id": 2,
+      "titulo": "Sapatos",
+      "descricao": "sapatos de calçar"
+    },
+    {
+      "id": 3,
+      "titulo": "Camisa",
+      "descricao": "camisas para vestir"
+    },
+    {
+      "titulo": "Calças",
+      "descricao": "calças em geral",
+      "id": 5
+    },
+    {
+      "titulo": "Mouses",
+      "descricao": "mouse em geral",
+      "id": 6
+    }
+  ],
+  "produto": [
+    {
+      "id": 1,
+      "categoria_id": 2,
+      "tamanho": "36",
+      "codigo": "10982-2",
+      "cor": "Preto",
+      "marca": "Artesurf",
+      "descricao": "",
+      "valor": 59.99,
+      "titulo": "Bota bla bla",
+      "quantidade": 10,
+      "imagens": [
+        "imagem01.jpg",
+        "imagem02.jng"
+      ]
+    },
+    {
+      "id": 2,
+      "categoria_id": 3,
+      "tamanho": "P",
+      "codigo": "10001-2",
+      "cor": "Rosa",
+      "marca": "SHEIN",
+      "descricao": "",
+      "valor": 29.99,
+      "titulo": "Cropped bla bla",
+      "quantidade": 2,
+      "imagens": [
+        "imagem01.jpg",
+        "imagem02.jng"
+      ]
+    },
+    {
+      "id": 3,
+      "categoria_id": 1,
+      "tamanho": "36",
+      "codigo": "1010-2",
+      "cor": "Azul",
+      "marca": "Dinky",
+      "descricao": "",
+      "valor": 89.99,
+      "titulo": "Short bla bla",
+      "quantidade": 1,
+      "imagens": [
+        "imagem01.jpg",
+        "imagem02.jng"
+      ]
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "Mariazinha"
+    }
+  ]
+}
