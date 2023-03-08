@@ -1,0 +1,10 @@
+{
+    "alunos": [
+    {
+        "nome": "Maria Mariana" ,
+        "email": "mariamariana11@icloud.com" ,
+        "telefone": "989010085",
+        "cidade": "Fortaleza"
+    }
+]
+}
