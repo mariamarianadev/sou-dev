@@ -8,4 +8,4 @@ export default function Button(props)
         <button className={props.tipo}>{props.texto}</button>
         </>
     )
-}
+} 
