@@ -1,4 +1,5 @@
 import Header from "./componentes/Header";
+import Banner from "./componentes/Banner";
 
 
 
@@ -6,7 +7,8 @@ import Header from "./componentes/Header";
 export default function App(){
   return(
      <>
-     <Header/>
+     <Header />
+     <Banner />
      </>
   )
 }
