@@ -1,5 +1,5 @@
 const express = require('express');
-const categoria = require('./cliente');
+const cliente = require('./cliente');
 
 //criando um router para gerenciar os endpoints de categoria
 const app = express.Router();
