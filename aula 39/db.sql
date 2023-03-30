@@ -26,6 +26,9 @@ CREATE TABLE tb_curso (
 -- Detalhar a estrutura de uma tabela --
 DESC nome_da_tabela;
 
+-- dados dentro da tabela
+ SELECT * FROM nome_da_tabela;
+
 -- Para alterar tabela --
 ALTER TABLE nome_da_tabela ....
 
