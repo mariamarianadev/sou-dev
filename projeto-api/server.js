@@ -1,12 +1,20 @@
 const express = require('express');
-const categoriaRoutes = require ('./resourses/category/routes');
+const categoryRoutes = require("./resources/category/routes");
+const bannerRoutes = require('./resources/banner/routes');
+const pagamentoRoutes = require('./resources/pagamento/routes');
+const cors = require('cors')
+
 const app = express();
 
-app.use(categoriaRoutes)
+app.use(cors());
+
+app.use(express.json()); //a comunicação toda vai ser feita em json, ta ligado!?
+app.use(categoryRoutes);
+app.use(bannerRoutes);
+app.use(pagamentoRoutes);
 
 app.listen(8000, () => {
-    console.log('--------')
-    console.log('--pronto--')
-    console.log('----------')
-
+    console.log('--------------');
+    console.log('--- PRONTO ---')
+    console.log('--------------');
 });

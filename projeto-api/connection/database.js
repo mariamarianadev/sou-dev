@@ -13,6 +13,8 @@ async function execute(sql) {
 
     return rows;
 }
+
 module.exports = {
     execute
-}
+};
+
