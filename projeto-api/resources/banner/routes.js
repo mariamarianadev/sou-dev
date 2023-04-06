@@ -8,25 +8,31 @@ const TABLE_NAME = 'tb_banner';
 const BASE_URL = '/banners';
 
 const pessoasAutorizadas = [
-{
-    nome: 'Sarah',
-    token:'4246'
-},
-{
-    nome: 'Marilia',
-    token: '4727'
-}
+    {
+        nome: 'Sara',
+        token: '4246' 
+    },
+    {
+        nome: 'Marilia',
+        token: '4727'
+    },
+    {
+        nome: 'Vanessa',
+        token: '4246'
+    }
 ];
 
 app.get(BASE_URL, async (req, res) => {
+    //filtrar apenas a(s) pessoa(s) que possuem aquele token
     let verificadas = pessoasAutorizadas.filter(
-        cada => cada.token === req.headers.token);
+        cada => cada.token === req.headers.token
+    );
     
-    if (verificadas.length === 0 ){
+    //se nao existir ninguem com aquele token, entao é "acesso nao autorizado"
+    if (verificadas.length === 0) {
         res.sendStatus(401);
         return;
     }
-
 
     let dados = await database.execute(`SELECT * FROM ${TABLE_NAME}`);
 
@@ -34,6 +40,7 @@ app.get(BASE_URL, async (req, res) => {
 });
 
 app.get(`${BASE_URL}/:id`, async (req, res) => {
+    
     let dados = await database.execute(`
         SELECT * FROM tb_banner WHERE id='${req.params.id}'
     `);
